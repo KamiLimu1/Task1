@@ -110,8 +110,7 @@ The ```-m``` flag tells git to create the commit with the given message. Other o
 - ```git commit am "commit message"```: A power user shortcut command that combines the -a and -m options. This combination immediately creates a commit of all the staged changes and takes an inline commit message.
 
 :::note
-A **git commit** to the local directory can be reversed. This can be achieved using the ```git revert``` command, which takes various arguments. In this case, we will use the SHA checksum of the commit we want to reverse. To get the SHA checksum, do a ```git log``` command as shown below. Then proceed to perform a ```git revert <SHA>```.
-	
+A **git commit** to the local directory can be reversed. This can be achieved using the ```git reset --soft head~1``` command. This directive will remove the last commit from the current branch, but the file changes will stay in your directory. You will still need to unstage it if you want to do so. 
 
 
 
