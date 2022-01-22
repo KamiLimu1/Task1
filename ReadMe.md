@@ -182,7 +182,7 @@ For this guide, however, we will create a simple page that displays the content 
 
 It is now your turn to follow this guide and create and share a ReadMe file on your Github account. 
 
-- For practice, try to recreate every step I have done above, including creating and pushing a file with some code your emote Github repository. 
+- For practice, try to recreate every step I have done above, including creating and pushing a file with some code to your remote Github repository. 
 
 - **FOR THE PEER MENTORSHIP TASK:** 
 
@@ -191,7 +191,7 @@ You will note that the Introduction section of this guide is incomplete. I have 
 1. Your first task: 
 Research and write briefly about these two technologies on your own ReadMe file. 
 
-2. On the same ReadMe for (1) above, reate a guide on any technology/ programming language concept that interests you. For example, you might decide to write about inheritance in Java or the fundamentals of HTML/ CSS. Whatever you decide to work on and its length is up to you. The only deliverable is a Github Page containing the above two incomplete parts followed by your guide. Incorporate as many screenshots as you wish. 
+2. On the same ReadMe for (1) above, create a guide on any technology/ programming language concept that interests you. For example, you might decide to write about inheritance in Java or the fundamentals of HTML/ CSS. Whatever you decide to work on and its length is up to you. The only deliverable is a Github Page containing the above two incomplete parts followed by your guide. Incorporate as many screenshots as you wish. 
 
 All the best!
 
