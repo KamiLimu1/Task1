@@ -1,12 +1,12 @@
 ### Introduction to Git and Github
 
-#### Introduction
+#### 1. Introduction
 
-Git is an important toolkit to have as a technology professional. While they sound the same, Git and Github are two different, but interelated, technologies. This guide covers how to set up and use Git and Github. It is meant to serve first-time users of the technologies, however, seasoned users are free to read through it and raise an issue if you find any. 
+Git is an important toolkit to have as a tech student and practitioner. While they sound the same, Git and Github are two different, but interelated, technologies. This guide covers how to set up and use Git and Github. It is meant to serve first-time users of both; however, seasoned users are free to read through and raise an issue if you find any. 
 
 While there are various ways of interacting with Git and Github, such as Github desktop, this guide will use the terminal/ Windows Command Prompt, not to make your life hard, but because it is important to learn the findamentals first. 
 
-Happy reading and practice! 
+Happy reading and practicing! 
 
 ##### What is Git?
 
@@ -16,23 +16,22 @@ Happy reading and practice!
 
 [To do]
 
-#### Getting Started
+#### 2. Getting Started
 
-#### Setting up Github
+##### Setting up Github
 
-Head over to [Github](https://github.com) to create a Github account (if you do not have one) or log in. Next, create a repository that will house your work. A repository (Fancy people call it repo:) ) is the directory or storage space in which your project/ files will live. It can be local to a folder on your computer, or it can be a storage space on GitHub or another online host. You can keep code files, text files, or image files inside a repository.
+Head over to [Github](https://github.com) to create a Github account (if you do not yet have one) or log in. Next, create a repository that will house your work. A *repository* (fancy people will call it repo:) ) is the directory or storage space in which your project/ files live. It can be local to a folder on your computer, or it can be a storage space on GitHub or another online host. You can keep code files, text files, or image files inside a repository.
 
 ![](create_repository.png)
 
 ---
-**IMPORTANT**
+***IMPORTANT***
 
 Do not select ```Create a readme file``` while creating your repository. While this is a form of documentation that contains information about the other files in your repository or even what the repository aims to achieve, in this case, I have left it unselected as I (and you later) will be creating a ReadMe locally.
+
 ---
 
- 
-
-#### Setting up Git
+##### Setting up Git
 
 Create a folder in your local machine and name it as suits you. Open your CMD/ terminal and move into this folder (You achieve this using the ```cd ``` command).
 
@@ -51,12 +50,13 @@ Most other Git commands are not available outside of an initialized repository, 
 ---
 **NOTE**
 
-The ```git init``` command creates a new Git repository. It can also be used to convert an existing project to a Git repository (which is what we have done above) or initialize a new, empty repository. 
+The ```git init``` command creates a new Git repository. It can also be used to convert an existing project to a Git repository (which is what we have done above) or initialize a new, empty repository.
+
 ---
 
-### Getting our hands dirty
+#### 3. Getting our hands dirty
 
-#### Clone the repository you created on Github
+##### Clone the repository you created on Github
 
 
 ```Clone``` means to create copy the repository in Github (the remote repository) so that you can work on it from your local machine. 
@@ -78,7 +78,7 @@ git clone + (copied link)
 
 Ignore the warning because we did not create any file within the remote repository while creating it.
 
-#### Create a file locally and store it remotely
+##### Create a file locally and store it remotely
 
 1. Using your favorite code editor (I am using SublimeText, for example), create a file and, in it, write a piece of code in a programming language of your choice. 
 
@@ -105,6 +105,7 @@ What ```git add``` command does is to copy this file (or a version of it) from y
 - **git add .** to add all the files in your directory to the staging area, or
 
 - **git add <file name>** to add a file by its name to the staging area. 
+
 ---
 
 In my case, I want to push both the ReadMe.md and SimplePython.py files. When I run ```git status``` again, the two files have been added to the staging area and the rest are untouched.  
@@ -137,15 +138,21 @@ The ```-m``` flag tells git to create the commit with the given message. Other o
 **NOTE**
 
 A **git commit** to the local directory can be reversed. This can be achieved using the ```git reset --soft head~1``` command. This directive will remove the last commit from the current branch, but the file changes will stay in your directory. You will still need to unstage it if you want to do so. 
+
 ---
 
 - **Second**, following a successful commit, we then ```push``` the files/ changes to the remote repository. 
+
 ![](git_push.png)
 
 Indeed, on checking the Github repository, we see the two files have been successfully added. 
+
 ![](push.png)
 
-### One Step Further: Adding the ReadMe to Github Pages 
+> ***NOTE*** When you run ```git remote add origin <URL>```, Github will ask for a password to authenticate yourself. However, note that Github no longer accepts passwords as a form of authentication. Instead, you have to provide a Personal Auccess Token, which can be set and copied from ***```Settings>>Developer Settings>>Personal access tokens>>Generate new token ```***
+	Before this, you might need to run ```git remote set-url origin https://username@github.com/username/repo_name.git``` to point to the remote URL you want to change.
+
+#### 4. One Step Further: Adding the ReadMe to Github Pages 
 
 Now that we have hosted our files on Github, it is time to share it with others. This is where ```Github pages``` comes in handy: it allows you to create websites for yourself and your projects and is hosted directly from your repositories (that is how you are seeing this guide and instructions!). You can learn more about Github pages [here.](https://pages.github.com)
 
@@ -161,6 +168,19 @@ For this guide, however, we will create a simple page that displays the content 
 ![](pages2.png)
 
 
-### Your Turn + Assignment
+#### 5. Your Turn + Assignment
 
+It is now your turn to follow this guide and create and share a ReadMe file on your Github account. 
 
+You will note that the Introduction section of this guide is incomplete. I have left the ***What is Git/ Github*** sections undone for a reason: Your ***first*** task is to research and write briefly about these two technologies. 
+
+***Second***, you will create a guide on any technology/ programming language concept that interests you. For example, you might decide to write about inheritance in Java or the fundamentals of HTML/ CSS. Whatever you decide to work on and its length is up to you. The only deliverable is a Github Page containing the above two incomplete parts followed by your guide. Incorporate as many screenshots as you wish. 
+
+All the best!
+
+---
+***IMPORTANT***
+
+As always, collaboration and not being afraid top ask for help when stuck are key. 
+
+---
