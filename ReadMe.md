@@ -6,7 +6,7 @@ Git is an important toolkit to have as a tech student and practitioner. While th
 
 While there are various ways of interacting with Git and Github, such as Github desktop, this guide will use the terminal/ Windows Command Prompt, not to make your life hard, but because it is important to learn the findamentals first. 
 
-Happy reading and practicing! 
+Happy reading and practising! 
 
 ##### What is Git?
 
