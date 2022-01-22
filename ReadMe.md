@@ -27,7 +27,7 @@ Head over to [Github](https://github.com) to create a Github account (if you do 
 ---
 ***IMPORTANT***
 
-Do not select ```Create a readme file``` while creating your repository. While this is a form of documentation that contains information about the other files in your repository or even what the repository aims to achieve, in this case, I have left it unselected as I (and you later) will be creating a ReadMe locally.
+As in the screenshot above, do not select ```Add a README file``` while creating your repository. While this is a form of documentation that contains information about the other files in your repository or even what the repository aims to achieve, in this case, I have left it unselected as I (and you later) will be creating a ReadMe locally.
 
 ---
 
@@ -76,7 +76,7 @@ git clone + (copied link)
 
 ![](clone2.png)
 
-Ignore the warning because we did not create any file within the remote repository while creating it.
+> Ignore the warning because we did not create any file within the remote repository while creating it.
 
 ##### Create a file locally and store it remotely
 
@@ -114,9 +114,11 @@ In my case, I want to push both the ReadMe.md and SimplePython.py files. When I 
 
 ---
 **NOTE**
+
 At this point, you can remove a file from the staging area using the ```git rm --cached <file>``` command. 
 
 Try it out to unstage the file you added then stage it again to proceed. 
+
  ---
 
 > From here, we can now push the files to our remote repository. 
@@ -130,9 +132,9 @@ For example, below, I will commit the two files with the message *First commit*
 ![](git_commit.png)
 
 The ```-m``` flag tells git to create the commit with the given message. Other options are available: 
-- ```git commit```: Commit the staged snapshot. This will launch a text editor prompting you for a commit message. After you’ve entered a message, save the file and close the editor to create the actual commit.
-- ```git commit -a```: Commit a snapshot of all changes in the working directory. This only includes modifications to tracked files (those that have been added with git add at some point in their history)
-- ```git commit am "commit message"```: A power user shortcut command that combines the -a and -m options. This combination immediately creates a commit of all the staged changes and takes an inline commit message.
+ 	- ```git commit```: Commit the staged snapshot. This will launch a text editor prompting you for a commit message. After you’ve entered a message, save the file and close the editor to create the actual commit.
+	- ```git commit -a```: Commit a snapshot of all changes in the working directory. This only includes modifications to tracked files (those that have been added with git add at some point in their history)
+	- ```git commit am "commit message"```: A power user shortcut command that combines the -a and -m options. This combination immediately creates a commit of all the staged changes and takes an inline commit message.
 
 ---
 **NOTE**
@@ -149,8 +151,15 @@ Indeed, on checking the Github repository, we see the two files have been succes
 
 ![](push.png)
 
-> ***NOTE*** When you run ```git remote add origin <URL>```, Github will ask for a password to authenticate yourself. However, note that Github no longer accepts passwords as a form of authentication. Instead, you have to provide a Personal Auccess Token, which can be set and copied from ***```Settings>>Developer Settings>>Personal access tokens>>Generate new token ```***
-	Before this, you might need to run ```git remote set-url origin https://username@github.com/username/repo_name.git``` to point to the remote URL you want to change.
+> 
+---
+***NOTE*** 
+
+When you run ```git remote add origin <URL>```, Github will ask for a password to authenticate yourself. However, note that Github no longer accepts passwords as a form of authentication. Instead, you have to provide a Personal Auccess Token, which can be set and copied from ***```Settings>>Developer Settings>>Personal access tokens>>Generate new token ```***
+	
+Before this, you might need to run ```git remote set-url origin https://username@github.com/username/repo_name.git``` to point to the remote URL you want to change.
+
+---
 
 #### 4. One Step Further: Adding the ReadMe to Github Pages 
 
@@ -165,6 +174,7 @@ For this guide, however, we will create a simple page that displays the content 
 ![](pages1.png)
 
 - My page looks like this: 
+
 ![](pages2.png)
 
 
@@ -172,15 +182,22 @@ For this guide, however, we will create a simple page that displays the content 
 
 It is now your turn to follow this guide and create and share a ReadMe file on your Github account. 
 
-You will note that the Introduction section of this guide is incomplete. I have left the ***What is Git/ Github*** sections undone for a reason: Your ***first*** task is to research and write briefly about these two technologies. 
+- For practice, try to recreate every step I have done above, including creating and pushing a file with some code your emote Github repository. 
 
-***Second***, you will create a guide on any technology/ programming language concept that interests you. For example, you might decide to write about inheritance in Java or the fundamentals of HTML/ CSS. Whatever you decide to work on and its length is up to you. The only deliverable is a Github Page containing the above two incomplete parts followed by your guide. Incorporate as many screenshots as you wish. 
+- **FOR THE PEER MENTORSHIP TASK:** 
+
+You will note that the Introduction section of this guide is incomplete. I have left the ***What is Git/ Github*** sections undone for a reason. 
+
+1. Your first task: 
+Research and write briefly about these two technologies on your own ReadMe file. 
+
+2. On the same ReadMe for (1) above, reate a guide on any technology/ programming language concept that interests you. For example, you might decide to write about inheritance in Java or the fundamentals of HTML/ CSS. Whatever you decide to work on and its length is up to you. The only deliverable is a Github Page containing the above two incomplete parts followed by your guide. Incorporate as many screenshots as you wish. 
 
 All the best!
 
 ---
 ***IMPORTANT***
 
-As always, collaboration and not being afraid top ask for help when stuck are key. 
+As always, collaboration and not being afraid to ask for help when stuck are key. 
 
 ---
