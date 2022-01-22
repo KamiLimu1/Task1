@@ -1,9 +1,5 @@
 ### Introduction to Git and Github
 
-:::author
-Allan Wasega
-:::
-
 #### Introduction
 
 
@@ -15,10 +11,9 @@ Allan Wasega
 
 ![](create_repository.png)
 
-```important
-Select ```Create a readme file``` while creating your repository. This is a form of documentation that contains information about the other files in your repository or even what the repository aims to achieve. 
+> :important: Select ```Create a readme file``` while creating your repository. This is a form of documentation that contains information about the other files in your repository or even what the repository aims to achieve. 
 In my case, I have left it unselected as I will be creating a ReadMe locally.
-```  
+ 
 
 ### Setting up Git
 
@@ -112,6 +107,27 @@ The ```-m``` flag tells git to create the commit with the given message. Other o
 :::note
 A **git commit** to the local directory can be reversed. This can be achieved using the ```git reset --soft head~1``` command. This directive will remove the last commit from the current branch, but the file changes will stay in your directory. You will still need to unstage it if you want to do so. 
 
+-Second, following a successful commit, we then ```push``` the files/ changes to the remote repository. 
+![](git_push.png)
 
+Indeed, on checking the Github repository, we see the two files have been successfully added. 
+![](push.png)
+
+### One Step Further: Adding the ReadMe to Github Pages 
+
+Now that we have hosted our files on Github, it is time to share it with others. This is where ```Github pages``` comes in handy: it allows you to create websites for yourself and your projects and is hosted directly from your repositories (that is how you are seeing this guide and instructions!). You can learn more about Github pages [here.](https://pages.github.com)
+
+For this guide, however, we will create a simple page that displays the content of the ReadMe file. 
+
+- Head over to your Github repository you created and pushed files to. 
+- Click on ```Settings``` and then ```Pages```. 
+- Change the source branch as ```Master``` and choose ```Cayman``` for your site's theme. You can play with the other themes too, although some will require further customizations to render your work. 
+- Click on ```Save``` and wait for a link to your page to be generated. In my case it is ```https://kamilimu1.github.io/Task1/```
+![](pages1.png)
+- My page looks like this: 
+![](pages2.png)
+
+
+### Your turn + Task assignment
 
 
