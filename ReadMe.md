@@ -104,7 +104,7 @@ What ```git add``` command does is to copy this file (or a version of it) from y
 
 - **git add .** to add all the files in your directory to the staging area, or
 
-- **git add <file name>** to add a file by its name to the staging area. 
+- **git add file name** to add a file by its name to the staging area. 
 
 ---
 
@@ -132,9 +132,9 @@ For example, below, I will commit the two files with the message *First commit*
 ![](git_commit.png)
 
 The ```-m``` flag tells git to create the commit with the given message. Other options are available: 
- 	- ```git commit```: Commit the staged snapshot. This will launch a text editor prompting you for a commit message. After you’ve entered a message, save the file and close the editor to create the actual commit.
-	- ```git commit -a```: Commit a snapshot of all changes in the working directory. This only includes modifications to tracked files (those that have been added with git add at some point in their history)
-	- ```git commit am "commit message"```: A power user shortcut command that combines the -a and -m options. This combination immediately creates a commit of all the staged changes and takes an inline commit message.
+ a. ```git commit```: Commit the staged snapshot. This will launch a text editor prompting you for a commit message. After you’ve entered a message, save the file and close the editor to create the actual commit.
+b. ```git commit -a```: Commit a snapshot of all changes in the working directory. This only includes modifications to tracked files (those that have been added with git add at some point in their history)
+c. ```git commit am "commit message"```: A power user shortcut command that combines the -a and -m options. This combination immediately creates a commit of all the staged changes and takes an inline commit message.
 
 ---
 **NOTE**
@@ -155,7 +155,7 @@ Indeed, on checking the Github repository, we see the two files have been succes
 ---
 ***NOTE*** 
 
-When you run ```git remote add origin <URL>```, Github will ask for a password to authenticate yourself. However, note that Github no longer accepts passwords as a form of authentication. Instead, you have to provide a Personal Auccess Token, which can be set and copied from ***```Settings>>Developer Settings>>Personal access tokens>>Generate new token ```***
+When you run ```git remote add origin <URL>```, Github will ask for a password to authenticate yourself. However, Github no longer accepts passwords as a form of authentication. Instead, you have to provide a Personal Auccess Token, which can be set and copied from ***```Settings>>Developer Settings>>Personal access tokens>>Generate new token ```***
 	
 Before this, you might need to run ```git remote set-url origin https://username@github.com/username/repo_name.git``` to point to the remote URL you want to change.
 
