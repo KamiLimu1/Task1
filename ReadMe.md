@@ -11,19 +11,21 @@
 
 ![](create_repository.png)
 
-{% important %}
+---
+**IMPORTANT**
 
 Important: Select ```Create a readme file``` while creating your repository. This is a form of documentation that contains information about the other files in your repository or even what the repository aims to achieve. 
 In my case, I have left it unselected as I will be creating a ReadMe locally.
 
-{% end important %}
+---
 
  
 
 ### Setting up Git
 
+On your terminal, run:
 
-```json
+```
 git init 
 ```
 This will initialize (start) git inside the folder (repository) in which you are working. 
@@ -33,26 +35,34 @@ The result will look something like this:
 
 Most other Git commands are not available outside of an initialized repository, so this is usually the first command you'll run in a new project.
 
-:::note
+---
+**NOTE**
+
 The ```git init``` command creates a new Git repository. It can also be used to convert an existing unversioned project to a Git repository (which is what we have done above) or initialize a new, empty repository. 
 
+---
 
 ### Clone the repositiory you created on Github
 
-:::note
+---
+**NOTE**
+
 ```Clone``` means to create copy the repository in Github (the remote repository) so that you can work on it from your local machine. 
 
 The ##clone## operation is done using the ```git clone``` command line utility in Git. 
-:::
+
+---
 
 1. To create a clone of your remote repository (the one on Github), head over to the repository and copy the link given under ```Quick setup``` as shown below:
 
 ![](clone1.png)
 
-2. Head over to your terminal and enter
-```json
+2. Head over to your terminal and enter: 
+
+```
 git clone + (copied link)
 ```
+
 ![](clone2.png)
 
 Ignore the warning because we did not create any file within the remote repository while creating it.
@@ -76,28 +86,31 @@ The staging area is like a rough draft space, where you can add and remove versi
 
 What ```git add``` command does is to copy this file (or a version of it) from your working directory to the staging area. 
 
-:::important
+---
+**IMPORTANT**
 
 ```git add``` can take one of two arguments. 
 
-- **git add .** to add all the files in your directory to the staging area, or
-- ** git add <file name> to add a file by its name to the staging area. 
-:::
+> **git add .** to add all the files in your directory to the staging area, or
+> **git add <file name>** to add a file by its name to the staging area. 
+
+---
 
 In my case, I want to push both the ReadMe.md and SimplePython.py files. When I run ```git status``` again, the two files have been added to the staging area and the rest are untouched.  
 
 ![](git_add.png)
 
-:::note
+---
+**NOTE**
 At this point, you can remove a file from the staging area using the ```git rm --cached <file>``` command. 
 
 Try it out to unstage the file you added then stage it again to proceed. 
-:::
+ ---
 
 c. From here, we can now push the files to our remote repository. 
 Typically, this is a two-stage process that proceeds as follows: 
 
-- First, we ```commit``` the changes using the command ```git commit -m "message" ```
+- **First**, we ```commit``` the changes using the command ```git commit -m "message" ```
 A **commit** is simply your way of capturing a snapshot of the current changes that you have made to your local repository. Once you perform a commit, Git will never change the captured snapshot unless you ask it to. Note that commits are done locally and, at this stage, no changes have been made to the remote repository yet. 
 
 For example, below, I will commit the two files with the message *First commit*
@@ -109,10 +122,14 @@ The ```-m``` flag tells git to create the commit with the given message. Other o
 - ```git commit -a```: Commit a snapshot of all changes in the working directory. This only includes modifications to tracked files (those that have been added with git add at some point in their history)
 - ```git commit am "commit message"```: A power user shortcut command that combines the -a and -m options. This combination immediately creates a commit of all the staged changes and takes an inline commit message.
 
-:::note
+---
+**NOTE**
+
 A **git commit** to the local directory can be reversed. This can be achieved using the ```git reset --soft head~1``` command. This directive will remove the last commit from the current branch, but the file changes will stay in your directory. You will still need to unstage it if you want to do so. 
 
--Second, following a successful commit, we then ```push``` the files/ changes to the remote repository. 
+---
+
+- **Second**, following a successful commit, we then ```push``` the files/ changes to the remote repository. 
 ![](git_push.png)
 
 Indeed, on checking the Github repository, we see the two files have been successfully added. 
