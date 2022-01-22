@@ -11,8 +11,13 @@
 
 ![](create_repository.png)
 
-> :important: Select ```Create a readme file``` while creating your repository. This is a form of documentation that contains information about the other files in your repository or even what the repository aims to achieve. 
+{% important %}
+
+Important: Select ```Create a readme file``` while creating your repository. This is a form of documentation that contains information about the other files in your repository or even what the repository aims to achieve. 
 In my case, I have left it unselected as I will be creating a ReadMe locally.
+
+{% end important %}
+
  
 
 ### Setting up Git
