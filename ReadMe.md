@@ -1,7 +1,3 @@
-% Introduction to Git and Github
-% Allan Wasega
-% 24th January, 2022
-![](KamiLimu_logo.jpeg)
 ### Introduction to Git and Github
 
 #### 1. Introduction
