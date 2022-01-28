@@ -33,7 +33,7 @@ As in the screenshot above, do not select ```Add a README file``` while creating
 
 ##### Setting up Git
 
-First, you need to have Git installed on your computer. To do so, head over to [this] (https://git-scm.com/download) link and download and install the appropriate version for your operating system. 
+First, you need to have Git installed on your computer. To do so, head over to [this](https://git-scm.com/download) link and download and install the appropriate version for your operating system. 
 
 Next, create a folder in your local machine and name it as suits you. Open your CMD/ terminal and move into this folder (You achieve this using the ```cd ``` command).
 
