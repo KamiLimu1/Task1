@@ -1,5 +1,7 @@
 ### Introduction to Git and Github
 
+This is my own working!
+
 #### 1. Introduction
 
 Git is an important toolkit to have as a tech student and practitioner. While they sound the same, Git and Github are two different, but interelated, technologies. This guide covers how to set up and use Git and Github. It is meant to serve first-time users of both; however, seasoned users are free to read through and raise an issue if you find any. 
